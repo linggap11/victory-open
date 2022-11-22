@@ -1,0 +1,117 @@
+ERROR - 2022-11-18 09:14:16 --> mysqli_sql_exception: Table 'victory_open.clubs' doesn't exist in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/victory-open/app/Models/Clubs.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/victory-open/app/Controllers/Home.php(20): App\Models\Clubs->showClub()
+#6 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-11-18 09:14:16 --> Table 'victory_open.clubs' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `clubs`
+ORDER BY `nama_club` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `clubs`
+ORDER BY `nama_club` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `clubs`
+ORDER BY `nama_club` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `clubs`
+ORDER BY `nama_club` ASC', [], false)
+ 5 APPPATH/Models/Clubs.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(20): App\Models\Clubs->showClub()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-18 09:14:17 --> mysqli_sql_exception: Table 'victory_open.clubs' doesn't exist in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/victory-open/app/Models/Clubs.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/victory-open/app/Controllers/Home.php(20): App\Models\Clubs->showClub()
+#6 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Home->index()
+#7 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2022-11-18 09:14:17 --> Table 'victory_open.clubs' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `clubs`
+ORDER BY `nama_club` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `clubs`
+ORDER BY `nama_club` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `clubs`
+ORDER BY `nama_club` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `clubs`
+ORDER BY `nama_club` ASC', [], false)
+ 5 APPPATH/Models/Clubs.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(20): App\Models\Clubs->showClub()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-18 22:16:52 --> Undefined index: i
+in APPPATH/Controllers/Registration.php on line 137.
+ 1 APPPATH/Controllers/Registration.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: i', 'APPPATH/Controllers/Registration.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanPeserta()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-18 22:38:59 --> Call to undefined function App\Controllers\now()
+in APPPATH/Controllers/Registration.php on line 245.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanPeserta()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-18 23:09:20 --> Undefined offset: 2
+in APPPATH/Controllers/Registration.php on line 249.
+ 1 APPPATH/Controllers/Registration.php(249): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 2', 'APPPATH/Controllers/Registration.php', 249, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanPeserta()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-18 23:10:35 --> Undefined offset: 2
+in APPPATH/Controllers/Registration.php on line 249.
+ 1 APPPATH/Controllers/Registration.php(249): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 2', 'APPPATH/Controllers/Registration.php', 249, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanPeserta()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-18 23:15:20 --> Undefined offset: 1
+in APPPATH/Controllers/Registration.php on line 137.
+ 1 APPPATH/Controllers/Registration.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH/Controllers/Registration.php', 137, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanPeserta()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-18 23:16:52 --> Undefined offset: 1
+in APPPATH/Controllers/Registration.php on line 138.
+ 1 APPPATH/Controllers/Registration.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH/Controllers/Registration.php', 138, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanPeserta()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

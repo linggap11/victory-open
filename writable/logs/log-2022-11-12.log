@@ -1,0 +1,305 @@
+ERROR - 2022-11-12 03:25:28 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'victory-open', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#11 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#3 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#6 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#8 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2022-11-12 03:25:28 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clubs` (`nama_club`, `email`, `manager`, `coach`, `wa`) VALUES (:nama_club:, :email:, :manager:, :coach:, :wa:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH/Controllers/Registration.php(32): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-12 03:26:09 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'victory_open', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#11 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#3 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#6 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#8 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2022-11-12 03:26:09 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clubs` (`nama_club`, `email`, `manager`, `coach`, `wa`) VALUES (:nama_club:, :email:, :manager:, :coach:, :wa:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH/Controllers/Registration.php(32): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-12 03:26:22 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'victory_open', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#11 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#3 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#6 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#8 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2022-11-12 03:26:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clubs` (`nama_club`, `email`, `manager`, `coach`, `wa`) VALUES (:nama_club:, :email:, :manager:, :coach:, :wa:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH/Controllers/Registration.php(32): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-12 03:27:32 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'victory_open', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#11 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#3 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#6 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#8 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2022-11-12 03:27:32 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clubs` (`nama_club`, `email`, `manager`, `coach`, `wa`) VALUES (:nama_club:, :email:, :manager:, :coach:, :wa:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH/Controllers/Registration.php(32): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-12 03:29:26 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'rms', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#11 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#3 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#6 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#8 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2022-11-12 03:29:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clubs` (`nama_club`, `email`, `manager`, `coach`, `wa`) VALUES (:nama_club:, :email:, :manager:, :coach:, :wa:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH/Controllers/Registration.php(32): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-11-12 03:30:31 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'victory_open', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#4 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#11 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cl...', Array, false)
+#3 /Applications/MAMP/htdocs/victory-open/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#5 /Applications/MAMP/htdocs/victory-open/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#6 /Applications/MAMP/htdocs/victory-open/system/BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#7 /Applications/MAMP/htdocs/victory-open/app/Controllers/Registration.php(32): CodeIgniter\BaseModel->save(Array)
+#8 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+#9 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+#10 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2022-11-12 03:30:31 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clubs` (`nama_club`, `email`, `manager`, `coach`, `wa`) VALUES (:nama_club:, :email:, :manager:, :coach:, :wa:)', [...], false)
+ 3 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH/Controllers/Registration.php(32): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Registration->simpanTim()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registration))
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-11-12 03:31:54 --> Class 'CodeIgniter\Database\MySQL\Connection' not found
+in SYSTEMPATH/Database/Database.php on line 136.
+ 1 SYSTEMPATH/Database/Database.php(56): CodeIgniter\Database\Database->initDriver('MySQL', 'CodeIgniter\\Database\\MySQL\\Connection', [...])
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Model.php(137): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH/Controllers/Registration.php(15): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Registration->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
