@@ -44,6 +44,11 @@ $routes->post('/save-peserta', 'Registration::simpanPeserta');
 $routes->post('/submit-peserta', 'Registration::submitPeserta');
 $routes->get('/test-email', 'Registration::testmail');
 
+$routes->get('/admin','Auth::login');
+$routes->post('/login-process', 'Auth::loginProcess');
+$routes->get('/logout', 'Auth::logout');
+$routes->get('/admin/dashboard', 'Auth::dashboard');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
