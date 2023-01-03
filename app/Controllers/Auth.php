@@ -27,9 +27,8 @@ class Auth extends BaseController
     public function login() {
         if (is_null(session()->get('user_id'))) {
             return view('login');    
-        } else {
-            return redirect()->to(base_url('/admin/dashboard'));
         }
+        return redirect()->to(base_url('/admin/dashboard'));
         
     }
 
@@ -75,7 +74,15 @@ class Auth extends BaseController
     }
 
     public function dashboard() {
-        return view('/admin/dashboard');
+        $totalPoomsae = $this->userModel->getTotalPoomsae();
+        $totalKyourugi = $this->userModel->getTotalKyourugi();
+        $totalClub = $this->clubModel->getTotalClub();        
+        $data = [
+            'totalPoomsae' => $totalPoomsae,
+            'totalKyourugi' => $totalKyourugi,
+            'totalClub' => $totalClub,
+        ];
+        return view('/admin/dashboard', $data);
     }
 
 }
