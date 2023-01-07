@@ -1,0 +1,218 @@
+CRITICAL - 2023-01-07 00:05:21 --> Object of class DateTime could not be converted to string
+in APPPATH/Views/admin/kyourugi.php on line 59.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/kyourugi', [], true)
+ 4 APPPATH/Controllers/Home.php(101): view('/admin/kyourugi', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->kyourugi()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 00:05:39 --> Object of class DateTime could not be converted to string
+in APPPATH/Views/admin/kyourugi.php on line 59.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/kyourugi', [], true)
+ 4 APPPATH/Controllers/Home.php(101): view('/admin/kyourugi', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->kyourugi()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 00:05:40 --> Object of class DateTime could not be converted to string
+in APPPATH/Views/admin/kyourugi.php on line 59.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/kyourugi', [], true)
+ 4 APPPATH/Controllers/Home.php(101): view('/admin/kyourugi', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->kyourugi()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 00:05:40 --> Object of class DateTime could not be converted to string
+in APPPATH/Views/admin/kyourugi.php on line 59.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/kyourugi', [], true)
+ 4 APPPATH/Controllers/Home.php(101): view('/admin/kyourugi', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->kyourugi()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 00:06:08 --> Object of class DateTime could not be converted to string
+in APPPATH/Views/admin/kyourugi.php on line 59.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/kyourugi', [], true)
+ 4 APPPATH/Controllers/Home.php(101): view('/admin/kyourugi', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->kyourugi()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 00:14:47 --> Class 'App\Controllers\DateTime' not found
+in APPPATH/Controllers/Home.php on line 114.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->test()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 00:34:46 --> Undefined property: stdClass::$-
+in APPPATH/Views/admin/kyourugi.php on line 54.
+ 1 APPPATH/Views/admin/kyourugi.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$-', 'APPPATH/Views/admin/kyourugi.php', 54, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/kyourugi.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/kyourugi', [], true)
+ 5 APPPATH/Controllers/Home.php(103): view('/admin/kyourugi', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->kyourugi()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 00:42:16 --> Undefined property: stdClass::$kategoeri_id
+in APPPATH/Views/admin/kyourugi.php on line 64.
+ 1 APPPATH/Views/admin/kyourugi.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$kategoeri_id', 'APPPATH/Views/admin/kyourugi.php', 64, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/kyourugi.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/kyourugi', [], true)
+ 5 APPPATH/Controllers/Home.php(103): view('/admin/kyourugi', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->kyourugi()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 00:50:07 --> syntax error, unexpected 'if' (T_IF), expecting ']'
+in APPPATH/Views/admin/kyourugi.php on line 56.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/kyourugi', [], true)
+ 3 APPPATH/Controllers/Home.php(103): view('/admin/kyourugi', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->kyourugi()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 01:08:34 --> syntax error, unexpected '}'
+in APPPATH/Models/Clubs.php on line 31.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/Clubs.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Clubs')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Clubs')
+ 4 APPPATH/Controllers/Home.php(17): spl_autoload_call('App\\Models\\Clubs')
+ 5 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2023-01-07 01:14:37 --> mysqli_sql_exception: Unknown column 'invoice.club_id' in 'on clause' in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/victory-open/app/Models/Clubs.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/victory-open/app/Controllers/Home.php(120): App\Models\Clubs->getInvoice()
+#6 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Home->invoice()
+#7 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-01-07 01:14:37 --> Unknown column 'invoice.club_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `invoice`
+JOIN `clubs` ON `clubs`.`id` = `invoice`.`club_id`
+ORDER BY `invoice`.`id` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `invoice`
+JOIN `clubs` ON `clubs`.`id` = `invoice`.`club_id`
+ORDER BY `invoice`.`id` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `invoice`
+JOIN `clubs` ON `clubs`.`id` = `invoice`.`club_id`
+ORDER BY `invoice`.`id` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `invoice`
+JOIN `clubs` ON `clubs`.`id` = `invoice`.`club_id`
+ORDER BY `invoice`.`id` DESC', [], false)
+ 5 APPPATH/Models/Clubs.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(120): App\Models\Clubs->getInvoice()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->invoice()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 01:14:52 --> Undefined variable: invoice
+in APPPATH/Views/admin/invoice.php on line 44.
+ 1 APPPATH/Views/admin/invoice.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: invoice', 'APPPATH/Views/admin/invoice.php', 44, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/invoice', [], true)
+ 5 APPPATH/Controllers/Home.php(125): view('/admin/invoice', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 01:15:10 --> Undefined variable: invoice
+in APPPATH/Views/admin/invoice.php on line 44.
+ 1 APPPATH/Views/admin/invoice.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: invoice', 'APPPATH/Views/admin/invoice.php', 44, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/invoice', [], true)
+ 5 APPPATH/Controllers/Home.php(125): view('/admin/invoice', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 01:15:11 --> Undefined variable: invoice
+in APPPATH/Views/admin/invoice.php on line 44.
+ 1 APPPATH/Views/admin/invoice.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: invoice', 'APPPATH/Views/admin/invoice.php', 44, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/invoice', [], true)
+ 5 APPPATH/Controllers/Home.php(125): view('/admin/invoice', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 01:15:11 --> Undefined variable: invoice
+in APPPATH/Views/admin/invoice.php on line 44.
+ 1 APPPATH/Views/admin/invoice.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: invoice', 'APPPATH/Views/admin/invoice.php', 44, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/invoice', [], true)
+ 5 APPPATH/Controllers/Home.php(125): view('/admin/invoice', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 01:15:12 --> Undefined variable: invoice
+in APPPATH/Views/admin/invoice.php on line 44.
+ 1 APPPATH/Views/admin/invoice.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: invoice', 'APPPATH/Views/admin/invoice.php', 44, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/invoice', [], true)
+ 5 APPPATH/Controllers/Home.php(125): view('/admin/invoice', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-07 01:15:12 --> Undefined variable: invoice
+in APPPATH/Views/admin/invoice.php on line 44.
+ 1 APPPATH/Views/admin/invoice.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: invoice', 'APPPATH/Views/admin/invoice.php', 44, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/invoice', [], true)
+ 5 APPPATH/Controllers/Home.php(125): view('/admin/invoice', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

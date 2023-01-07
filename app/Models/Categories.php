@@ -49,6 +49,22 @@ class Categories extends Model
         ]);
     }
 
+    public function getClassPutra() {
+        $query = $this->db->table('class')
+            ->where('jk', 'PUTRA')
+            ->get();
+
+        return $query;
+    }
+
+    public function getClassPutri() {
+        $query = $this->db->table('class')
+            ->where('jk', 'PUTRI')
+            ->get();
+
+        return $query;
+    }
+
 }   
 
 ?>

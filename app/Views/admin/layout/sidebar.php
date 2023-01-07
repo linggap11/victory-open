@@ -1,20 +1,20 @@
 <div class="page-sidebar custom-scrollbar" data-intro="This is sidebar">
     <ul class="sidebar-menu">
         <li>
-            <div class="sidebar-title">Victory's Dashboard</div>
+            <div class="sidebar-title"><?= session()->get('user_id')  ?>'s Page</div>
             <a href="/admin/dashboard" class="sidebar-header">
                 <i class="icon-notepad"></i> <span>Dashboard</span>
             </a> 
-            <a href="admin/poomsae" class="sidebar-header">
+            <a href="/admin/poomsae" class="sidebar-header">
                 <i class="icon-id-badge"></i> <span>Peserta Poomsae</span>
             </a> 
-            <a href="admin/kyourugi" class="sidebar-header">
+            <a href="/admin/kyourugi" class="sidebar-header">
                 <i class="icon-id-badge"></i> <span>Peserta Kyourugi</span>
             </a> 
-            <a href="admin/club" class="sidebar-header">
+            <a href="/admin/club" class="sidebar-header">
                 <i class="icon-flag"></i> <span>Club</span>
             </a> 
-            <a href="admin/invoice" class="sidebar-header">
+            <a href="/admin/invoice" class="sidebar-header">
                 <i class="icon-wallet"></i> <span>Invoice</span>
             </a> 
         </li>     

@@ -1,0 +1,112 @@
+ERROR - 2023-01-04 19:45:54 --> mysqli_sql_exception: Unknown column 'clubs.id' in 'order clause' in /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/victory-open/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/MAMP/htdocs/victory-open/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/MAMP/htdocs/victory-open/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/victory-open/app/Models/Users.php(52): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/victory-open/app/Controllers/Home.php(84): App\Models\Users->getDataPoomsaePair()
+#6 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(927): App\Controllers\Home->poomsae()
+#7 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Applications/MAMP/htdocs/victory-open/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/victory-open/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /Applications/MAMP/htdocs/victory-open/system/Commands/Server/rewrite.php(46): require_once('/Applications/M...')
+#11 {main}
+CRITICAL - 2023-01-04 19:45:54 --> Unknown column 'clubs.id' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `users` as `u1`
+JOIN `class_detail` ON `class_detail`.`user_1` = `u1`.`id`
+JOIN `users` as `u2` ON `class_detail`.`user_2` = `u2`.`id`
+JOIN `categories` ON `categories`.`id` = `class_detail`.`category_id`
+WHERE `categories`.`jenis` = \'pair\'
+ORDER BY `clubs`.`id` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users` as `u1`
+JOIN `class_detail` ON `class_detail`.`user_1` = `u1`.`id`
+JOIN `users` as `u2` ON `class_detail`.`user_2` = `u2`.`id`
+JOIN `categories` ON `categories`.`id` = `class_detail`.`category_id`
+WHERE `categories`.`jenis` = \'pair\'
+ORDER BY `clubs`.`id` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users` as `u1`
+JOIN `class_detail` ON `class_detail`.`user_1` = `u1`.`id`
+JOIN `users` as `u2` ON `class_detail`.`user_2` = `u2`.`id`
+JOIN `categories` ON `categories`.`id` = `class_detail`.`category_id`
+WHERE `categories`.`jenis` = \'pair\'
+ORDER BY `clubs`.`id` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users` as `u1`
+JOIN `class_detail` ON `class_detail`.`user_1` = `u1`.`id`
+JOIN `users` as `u2` ON `class_detail`.`user_2` = `u2`.`id`
+JOIN `categories` ON `categories`.`id` = `class_detail`.`category_id`
+WHERE `categories`.`jenis` = :categories.jenis:
+ORDER BY `clubs`.`id` ASC', [...], false)
+ 5 APPPATH/Models/Users.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(84): App\Models\Users->getDataPoomsaePair()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->poomsae()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-04 20:06:01 --> Undefined variable: peserta
+in APPPATH/Views/admin/poomsae.php on line 43.
+ 1 APPPATH/Views/admin/poomsae.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: peserta', 'APPPATH/Views/admin/poomsae.php', 43, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/poomsae.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/poomsae', [], true)
+ 5 APPPATH/Controllers/Home.php(92): view('/admin/poomsae', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->poomsae()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-04 20:06:27 --> Undefined property: stdClass::$kategori
+in APPPATH/Views/admin/poomsae.php on line 48.
+ 1 APPPATH/Views/admin/poomsae.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$kategori', 'APPPATH/Views/admin/poomsae.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/poomsae.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/poomsae', [], true)
+ 5 APPPATH/Controllers/Home.php(92): view('/admin/poomsae', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->poomsae()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-04 20:12:30 --> Undefined property: stdClass::$jk
+in APPPATH/Views/admin/poomsae.php on line 46.
+ 1 APPPATH/Views/admin/poomsae.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$jk', 'APPPATH/Views/admin/poomsae.php', 46, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/poomsae.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/poomsae', [], true)
+ 5 APPPATH/Controllers/Home.php(92): view('/admin/poomsae', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->poomsae()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-04 20:17:51 --> A non well formed numeric value encountered
+in APPPATH/Views/admin/poomsae.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well formed numeric value encountered', 'APPPATH/Views/admin/poomsae.php', 48, [...])
+ 2 APPPATH/Views/admin/poomsae.php(48): date('d/m/Y', '2022-11-16')
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/poomsae.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/poomsae', [], true)
+ 6 APPPATH/Controllers/Home.php(92): view('/admin/poomsae', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->poomsae()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-04 20:30:35 --> Undefined property: stdClass::$tl1
+in APPPATH/Views/admin/poomsae.php on line 129.
+ 1 APPPATH/Views/admin/poomsae.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$tl1', 'APPPATH/Views/admin/poomsae.php', 129, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/poomsae.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('/admin/poomsae', [], true)
+ 5 APPPATH/Controllers/Home.php(92): view('/admin/poomsae', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->poomsae()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

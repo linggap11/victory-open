@@ -78,5 +78,43 @@
         </div>
         
     </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Daftar Peserta Yang Baru Daftar</h5>                                       
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive" style="overflow-x: initial;">
+                        <table id="basic-1" class="display">
+                            <thead>
+                                <tr>
+                                    <th style="width: 5%;">No</th>
+                                    <th>Nama</th>
+                                    <th>Gender</th>
+                                    <th>Club</th>
+                                    <th>Manager</th>
+                                </tr>
+                            </thead>
+                            <tbody>  
+                                <?php $no = 1; ?>
+                                <?php foreach($peserta->getResultObject() as $pes) : ?>
+                                    <tr>
+                                        <td class="text-center"><?= $no++ ?></td>
+                                        <td><?= $pes->nama_lengkap ?></td>
+                                        <td class="text-center"><?= $pes->jk ?></td>
+                                        <td class="text-center"><strong><?= $pes->nama_club ?></strong></td>
+                                        <td class="text-center"><?= $pes->manager ?></td>
+                                    </tr>
+                                <?php endforeach ?>
+                            </tbody> 
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 <?= $this->endSection() ?>

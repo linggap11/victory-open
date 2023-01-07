@@ -47,7 +47,12 @@ $routes->get('/test-email', 'Registration::testmail');
 $routes->get('/admin','Auth::login');
 $routes->post('/login-process', 'Auth::loginProcess');
 $routes->get('/logout', 'Auth::logout');
-$routes->get('/admin/dashboard', 'Auth::dashboard');
+$routes->get('/admin/dashboard', 'Home::dashboard');
+$routes->get('/admin/poomsae', 'Home::poomsae');
+$routes->get('/admin/kyourugi', 'Home::kyourugi');
+$routes->get('/admin/club', 'Home::club');
+$routes->get('/admin/invoice', 'Home::invoice');
+
 
 /*
  * --------------------------------------------------------------------

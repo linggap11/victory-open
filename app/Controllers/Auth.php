@@ -73,16 +73,6 @@ class Auth extends BaseController
         return redirect()->to(base_url('/admin'));
     }
 
-    public function dashboard() {
-        $totalPoomsae = $this->userModel->getTotalPoomsae();
-        $totalKyourugi = $this->userModel->getTotalKyourugi();
-        $totalClub = $this->clubModel->getTotalClub();        
-        $data = [
-            'totalPoomsae' => $totalPoomsae,
-            'totalKyourugi' => $totalKyourugi,
-            'totalClub' => $totalClub,
-        ];
-        return view('/admin/dashboard', $data);
-    }
+    
 
 }

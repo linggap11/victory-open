@@ -22,4 +22,12 @@ class Clubs extends Model
             ->get();
         return $query->getFirstRow();
     }
+
+    public function getInvoice() {
+        $query = $this->db->table('invoice')
+            ->join('clubs', 'clubs.id = invoice.tim')
+            ->orderBy('invoice.id', 'DESC')
+            ->get();
+        return $query;
+    }
 }

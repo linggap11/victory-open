@@ -1,5 +1,5 @@
 <script src="/admin-assets/assets/js/jquery-3.2.1.min.js" ></script>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- Bootstrap js-->
 <script src="/admin-assets/assets/js/bootstrap/popper.min.js" ></script>
 <script src="/admin-assets/assets/js/bootstrap/bootstrap.js" ></script>
@@ -24,6 +24,12 @@
 <script src="/admin-assets/assets/js/datatables/datatable.custom.js"></script>
 
 
+<script>
+     $('.btn').on('click', function() {
+        console.log("wkkwwk");
+        swal("belum bisa");
+     })
+</script>
 </body>
 
 </html>
